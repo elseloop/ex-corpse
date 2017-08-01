@@ -1,0 +1,95 @@
+html, body {
+  background-color: #fff;
+  color: #222;
+  font-family: sans-serif;
+  height: 100vh;
+  line-height: 1.5;
+}
+
+body {
+  background-image: url(corpse.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: right;
+}
+
+label {
+  text-align: left;
+}
+
+input {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid rebeccapurple;
+  color: #222;
+  display: inline-block;
+  font-size: 1rem;
+  max-width: 100%;
+  min-height: 2rem;
+  flex-basis: 500px;
+  padding: .5rem 1rem;
+  vertical-align: top;
+}
+
+input::placeholder {
+  color: #bbb;
+  font-style: italic;
+  font-size: .75rem;
+}
+
+button {
+  background-color: rebeccapurple;
+  border: 1px solid rebeccapurple;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: .5ch;
+  min-height: 50px;
+  padding:  .5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.App {
+  background-color: rgba(61, 0, 255, 0.5);
+  color: #fff;
+  display: inline-block;
+  height: 100vh;
+  padding: 0 2rem;
+  text-align: left;
+  text-shadow: 0 2px 1px rebeccapurple;
+  width: 50vw;
+}
+
+.App > * + * {
+  margin-top: 2rem;
+}
+
+.CorpseBody {
+  background-color: #fff;
+  border: 1px solid rebeccapurple;
+  color: #222;
+  display: inline-block;
+  min-width: 500px;
+  min-height: 5rem;
+  padding: 1rem;
+  text-align: left;
+  text-shadow: none;
+}
+
+.InputGroup {
+  display: flex;
+}
+
+.accessibility {
+  position: absolute !important;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
